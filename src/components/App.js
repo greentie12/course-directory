@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import Header from "./Header";
 import Home from "./Home";
 import About from "./About";
@@ -9,7 +9,7 @@ import Featured from "./Featured";
 import NotFound from "./NotFound";
 
 const App = () => (
-  <BrowserRouter basename="/course-directory">
+  <HashRouter basename="/course-directory">
     <div className="container">
       <Header />
 
@@ -22,7 +22,7 @@ const App = () => (
         <Route component={NotFound} />
       </Switch>
     </div>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;
